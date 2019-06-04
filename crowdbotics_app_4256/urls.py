@@ -21,6 +21,7 @@ urlpatterns = [
     url(r'^accounts/', include('allauth.urls')),
     url(r'^api/v1/', include('home.api.v1.urls')),
     path('admin/', admin.site.urls),
+    url(r'^photos/', include('photologue.urls', namespace='photologue')),
 ]
 
 admin.site.site_header = 'crowdbotics_app'
